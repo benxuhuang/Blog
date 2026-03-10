@@ -1,14 +1,17 @@
 ---
-layout: post
 title: 使用 .NET MAUI Blazor 與 Firebase 打造跨平台 AI 動態桌布 App (DynamicWallpaperApp)
-color: blue
-excerpt_separator: <!--more-->
+date: 2026-03-10T05:22:38.420Z
 tags:
   - C#
   - .NET MAUI
   - Blazor
   - Firebase
   - AI
+color: gray
+layout: post
+hide: false
+excerpt_separator: <!--more-->
+bootstrap: false
 ---
 
 在現今的行動應用開發中，跨平台框架帶來了極大的便利性。今天我想向大家介紹我近期開發的專案 **DynamicWallpaperApp** — 這是一款結合了人工智慧，讓使用者可以輕鬆生成並使用 AI 動態桌布的跨平台 App。
