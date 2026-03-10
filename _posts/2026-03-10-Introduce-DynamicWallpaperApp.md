@@ -9,7 +9,7 @@ tags:
   - AI
 color: gray
 layout: post
-hide: false
+hide: true
 excerpt_separator: <!--more-->
 bootstrap: false
 ---
