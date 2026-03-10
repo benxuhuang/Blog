@@ -8,37 +8,20 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        ruby-version: [ '2.6', '2.7', '3.0' ]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+    - uses: actions/checkout@v4
 
-    - name: Set up Ruby 2.6
-      uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: ${{ matrix.ruby-version }}
-        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+        ruby-version: '3.4'
 
-    - name: Build the gem
-      continue-on-error: true
+    - name: Install dependencies
       run: |
-        gem build *.gemspec
-        echo `find . -name "*.gem" | tail -1 | awk -F"[/]" '{print $2}'`
+        bundle lock --add-platform x86_64-linux
+        bundle install
 
-    - name: Install packages
-      continue-on-error: true
-      run: |
-        gem install type-on-strap
-        gem install jekyll-theme-type-on-strap
-        docker pull sylhare/type-on-strap
-        docker pull sylhare/jekyll
-
+    - name: Build Jekyll site
+      run: bundle exec jekyll build --future

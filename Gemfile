@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 gemspec
 
-gem 'wdm', '>= 0.2.0'
+gem 'wdm', '>= 0.2.0', platforms: [:mingw, :x64_mingw, :mswin]
 gem 'csv'
 gem 'logger'
 gem 'base64'
