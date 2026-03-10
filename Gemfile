@@ -1,4 +1,4 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 gemspec
 
 gem 'wdm', '>= 0.2.0'
