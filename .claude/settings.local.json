@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gem install:*)",
+      "Bash(bundle:*)",
+      "Bash(ruby:*)",
+      "Bash(gem list:*)",
+      "Bash(gem search:*)"
+    ]
+  }
+}

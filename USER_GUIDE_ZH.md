@@ -1,4 +1,8 @@
-# Type on Strap - 繁體中文使用手冊 🎨
+---
+title: "Type on Strap - 繁體中文使用手冊 🎨"
+hide: true
+---
+
 
 本手冊將引導您如何安裝、部屬及使用 `Type on Strap` Jekyll 主題。
 
