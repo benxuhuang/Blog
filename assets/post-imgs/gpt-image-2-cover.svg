@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="0.52" stop-color="#18264A"/>
+      <stop offset="1" stop-color="#2D3C72"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(280 180) rotate(27) scale(260 260)">
+      <stop stop-color="#7A8CFF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#7A8CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1280 220) rotate(20) scale(300 300)">
+      <stop stop-color="#67D8FF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#67D8FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1140 720) rotate(24) scale(360 360)">
+      <stop stop-color="#B05BFF" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#B05BFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="290" y1="230" x2="1290" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#141A2F"/>
+      <stop offset="1" stop-color="#1A2344"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="340" y1="340" x2="670" y2="655" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24315D"/>
+      <stop offset="1" stop-color="#101A37"/>
+    </linearGradient>
+    <filter id="blur50" x="-100" y="-100" width="1800" height="1100" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+    <filter id="shadow" x="240" y="180" width="1080" height="640" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <filter id="soft" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <style>
+      .title { font: 700 74px 'DejaVu Sans', Arial, sans-serif; fill: white; }
+      .subtitle { font: 400 34px 'DejaVu Sans', Arial, sans-serif; fill: #D7E1FF; opacity: .94; }
+      .small { font: 400 26px 'DejaVu Sans', Arial, sans-serif; fill: white; }
+      .chip { font: 600 24px 'DejaVu Sans', Arial, sans-serif; fill: white; letter-spacing: .04em; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow1)" filter="url(#blur50)"/>
+  <rect width="1600" height="900" fill="url(#glow2)" filter="url(#blur50)"/>
+  <rect width="1600" height="900" fill="url(#glow3)" filter="url(#blur50)"/>
+
+  <g opacity="0.95">
+    <circle cx="126" cy="108" r="2" fill="#FFFFFF"/>
+    <circle cx="204" cy="76" r="1.5" fill="#FFFFFF"/>
+    <circle cx="326" cy="165" r="2" fill="#D6E3FF"/>
+    <circle cx="444" cy="92" r="1.7" fill="#FFFFFF"/>
+    <circle cx="1224" cy="110" r="2.4" fill="#FFFFFF"/>
+    <circle cx="1360" cy="156" r="1.5" fill="#FFFFFF"/>
+    <circle cx="1455" cy="74" r="2" fill="#E9F2FF"/>
+    <circle cx="92" cy="722" r="2" fill="#FFFFFF"/>
+    <circle cx="168" cy="664" r="1.5" fill="#BFD6FF"/>
+    <circle cx="1508" cy="684" r="2" fill="#FFFFFF"/>
+    <circle cx="1394" cy="760" r="1.5" fill="#DCE6FF"/>
+    <circle cx="1150" cy="814" r="2" fill="#FFFFFF"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="312" y="258" width="976" height="486" rx="38" fill="#000" opacity="0.36"/>
+  </g>
+
+  <rect x="290" y="230" width="1000" height="500" rx="40" fill="url(#panel)" stroke="#8FA7FF" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M290 270C290 252.327 304.327 238 322 238H1258C1275.67 238 1290 252.327 1290 270V290H290V270Z" fill="#202A50"/>
+  <circle cx="330" cy="259" r="10" fill="#FF5F56"/>
+  <circle cx="366" cy="259" r="10" fill="#FFBD2E"/>
+  <circle cx="402" cy="259" r="10" fill="#27C93F"/>
+
+  <text x="340" y="188" class="title">GPT Image 2</text>
+  <text x="340" y="244" class="subtitle">AI image generation for blog posts</text>
+
+  <rect x="1048" y="132" width="220" height="52" rx="18" fill="#667DFF" fill-opacity="0.9"/>
+  <text x="1081" y="167" class="chip">ILLUSTRATION</text>
+
+  <rect x="340" y="340" width="330" height="315" rx="28" fill="url(#screen)" stroke="#9DB1FF" stroke-opacity="0.18" stroke-width="2"/>
+  <rect x="700" y="340" width="540" height="315" rx="28" fill="#1A2242" stroke="#9DB1FF" stroke-opacity="0.18" stroke-width="2"/>
+
+  <g opacity="0.7">
+    <line x1="380" y1="388" x2="620" y2="388" stroke="#8DB0FF" stroke-opacity="0.24"/>
+    <line x1="380" y1="444" x2="620" y2="444" stroke="#8DB0FF" stroke-opacity="0.24"/>
+    <line x1="380" y1="500" x2="620" y2="500" stroke="#8DB0FF" stroke-opacity="0.24"/>
+    <line x1="380" y1="556" x2="620" y2="556" stroke="#8DB0FF" stroke-opacity="0.24"/>
+    <line x1="436" y1="380" x2="436" y2="604" stroke="#8DB0FF" stroke-opacity="0.24"/>
+    <line x1="492" y1="380" x2="492" y2="604" stroke="#8DB0FF" stroke-opacity="0.24"/>
+    <line x1="548" y1="380" x2="548" y2="604" stroke="#8DB0FF" stroke-opacity="0.24"/>
+    <line x1="604" y1="380" x2="604" y2="604" stroke="#8DB0FF" stroke-opacity="0.24"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <ellipse cx="500" cy="490" rx="88" ry="88" fill="#7A8CFF" fill-opacity="0.48"/>
+    <ellipse cx="500" cy="490" rx="44" ry="44" fill="#F4F9FF" fill-opacity="0.95"/>
+  </g>
+  <ellipse cx="500" cy="490" rx="88" ry="88" fill="#7A8CFF" fill-opacity="0.62"/>
+  <ellipse cx="500" cy="490" rx="44" ry="44" fill="#F4F9FF" fill-opacity="0.95"/>
+
+  <rect x="392" y="408" width="92" height="58" rx="16" fill="#35D6FF" fill-opacity="0.9"/>
+  <rect x="510" y="392" width="112" height="48" rx="16" fill="#FF79C6" fill-opacity="0.82"/>
+  <rect x="448" y="548" width="144" height="56" rx="16" fill="#7EF0B3" fill-opacity="0.72"/>
+
+  <g>
+    <rect x="736" y="366" width="470" height="70" rx="18" fill="#2F3D74"/>
+    <rect x="760" y="382" width="100" height="38" rx="12" fill="#6790FF"/>
+    <rect x="880" y="396" width="286" height="8" rx="4" fill="#B8C8FF" fill-opacity="0.78"/>
+
+    <rect x="736" y="461" width="470" height="70" rx="18" fill="#2F3D74"/>
+    <rect x="760" y="477" width="100" height="38" rx="12" fill="#FF79C6"/>
+    <rect x="880" y="491" width="286" height="8" rx="4" fill="#B8C8FF" fill-opacity="0.62"/>
+
+    <rect x="736" y="556" width="470" height="70" rx="18" fill="#2F3D74"/>
+    <rect x="760" y="572" width="100" height="38" rx="12" fill="#7EF0B3"/>
+    <rect x="880" y="586" width="286" height="8" rx="4" fill="#B8C8FF" fill-opacity="0.48"/>
+  </g>
+
+  <rect x="340" y="680" width="890" height="14" rx="7" fill="#6C86FF" fill-opacity="0.72"/>
+</svg>
