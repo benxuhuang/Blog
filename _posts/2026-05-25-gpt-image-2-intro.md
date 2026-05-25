@@ -2,8 +2,8 @@
 layout: post
 title: GPT Image 2 是什麼？用最簡單方式認識 AI 圖像生成
 color: turquoise
-feature-img: "/Blog/assets/post-imgs/gpt-image-2-cover.svg"
-thumbnail: "/Blog/assets/post-imgs/gpt-image-2-cover.svg"
+feature-img: "/assets/post-imgs/gpt-image-2-cover.svg"
+thumbnail: "/assets/post-imgs/gpt-image-2-cover.svg"
 excerpt_separator: <!--more-->
 tags:
   - ai
