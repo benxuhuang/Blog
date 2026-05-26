@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hermes Kanban workflow example</title>
+  <desc id="desc">程式開發案例的看板流程示意圖：需求、研究、實作、Review、完成。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07111c"/>
+      <stop offset="100%" stop-color="#111f38"/>
+    </linearGradient>
+    <linearGradient id="column" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#152842"/>
+      <stop offset="100%" stop-color="#0c1728"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a6bf3"/>
+      <stop offset="100%" stop-color="#1b3f79"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#35c8a7"/>
+      <stop offset="100%" stop-color="#15715d"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#b07a12"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#7be8ff"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="100" y="110" fill="#ffffff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="54" font-weight="700">程式開發案例：一張卡只做一件事</text>
+  <text x="100" y="160" fill="#b5cde8" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="24">研究、實作、驗證、review 分開，流程就會很乾淨</text>
+
+  <g transform="translate(90 230)">
+    <rect x="0" y="0" width="280" height="520" rx="28" fill="url(#column)" stroke="#35507a" stroke-width="2"/>
+    <text x="28" y="52" fill="#dff7ff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="30" font-weight="700">1. 需求</text>
+    <rect x="28" y="86" width="224" height="150" rx="20" fill="url(#card1)" filter="url(#shadow)"/>
+    <text x="46" y="126" fill="#ffffff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="20" font-weight="700">Title</text>
+    <text x="46" y="154" fill="#d6ecff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="18">feat: mobile dashboard access</text>
+    <rect x="46" y="176" width="186" height="12" rx="6" fill="#ffffff" opacity="0.75"/>
+    <rect x="46" y="200" width="150" height="12" rx="6" fill="#ffffff" opacity="0.52"/>
+    <text x="46" y="236" fill="#d6ecff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="16">清楚寫出目標、限制、完成標準。</text>
+  </g>
+
+  <g stroke="#7be8ff" stroke-width="6" stroke-linecap="round" fill="none" marker-end="url(#arrow)">
+    <path d="M370 490 C 410 490, 410 490, 440 490"/>
+    <path d="M650 490 C 690 490, 690 490, 720 490"/>
+    <path d="M930 490 C 970 490, 970 490, 1000 490"/>
+    <path d="M1210 490 C 1250 490, 1250 490, 1280 490"/>
+  </g>
+
+  <g transform="translate(400 230)">
+    <rect x="0" y="0" width="280" height="520" rx="28" fill="url(#column)" stroke="#35507a" stroke-width="2"/>
+    <text x="28" y="52" fill="#dff7ff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="30" font-weight="700">2. 研究</text>
+    <rect x="28" y="86" width="224" height="150" rx="20" fill="url(#card2)" filter="url(#shadow)"/>
+    <text x="46" y="126" fill="#ffffff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="20" font-weight="700">Title</text>
+    <text x="46" y="154" fill="#dcfff6" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="18">research: access patterns</text>
+    <rect x="46" y="176" width="180" height="12" rx="6" fill="#ffffff" opacity="0.75"/>
+    <rect x="46" y="200" width="128" height="12" rx="6" fill="#ffffff" opacity="0.52"/>
+    <text x="46" y="236" fill="#dcfff6" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="16">把不確定的事情先查清楚。</text>
+  </g>
+
+  <g transform="translate(710 230)">
+    <rect x="0" y="0" width="280" height="520" rx="28" fill="url(#column)" stroke="#35507a" stroke-width="2"/>
+    <text x="28" y="52" fill="#dff7ff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="30" font-weight="700">3. 實作</text>
+    <rect x="28" y="86" width="224" height="150" rx="20" fill="url(#card1)" filter="url(#shadow)"/>
+    <text x="46" y="126" fill="#ffffff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="20" font-weight="700">Title</text>
+    <text x="46" y="154" fill="#d6ecff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="18">fix: host header compatibility</text>
+    <rect x="46" y="176" width="192" height="12" rx="6" fill="#ffffff" opacity="0.75"/>
+    <rect x="46" y="200" width="144" height="12" rx="6" fill="#ffffff" opacity="0.52"/>
+    <text x="46" y="236" fill="#d6ecff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="16">每次只改一個焦點，方便驗證。</text>
+  </g>
+
+  <g transform="translate(1020 230)">
+    <rect x="0" y="0" width="280" height="520" rx="28" fill="url(#column)" stroke="#35507a" stroke-width="2"/>
+    <text x="28" y="52" fill="#dff7ff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="30" font-weight="700">4. Review / 測試</text>
+    <rect x="28" y="86" width="224" height="150" rx="20" fill="url(#card3)" filter="url(#shadow)"/>
+    <text x="46" y="126" fill="#ffffff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="20" font-weight="700">Title</text>
+    <text x="46" y="154" fill="#fff6df" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="18">review: release checklist</text>
+    <rect x="46" y="176" width="182" height="12" rx="6" fill="#ffffff" opacity="0.75"/>
+    <rect x="46" y="200" width="138" height="12" rx="6" fill="#ffffff" opacity="0.52"/>
+    <text x="46" y="236" fill="#fff6df" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="16">測試、審查、驗收都放這裡。</text>
+  </g>
+
+  <g transform="translate(1330 230)">
+    <rect x="0" y="0" width="180" height="520" rx="28" fill="url(#column)" stroke="#35507a" stroke-width="2"/>
+    <text x="24" y="52" fill="#dff7ff" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="30" font-weight="700">5. 完成</text>
+    <rect x="22" y="86" width="136" height="150" rx="20" fill="#1a4f39" filter="url(#shadow)"/>
+    <circle cx="90" cy="150" r="34" fill="#5af0b1"/>
+    <path d="M75 151 l10 10 l24 -26" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="90" y="208" text-anchor="middle" fill="#dcfff6" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="17">complete</text>
+    <text x="90" y="238" text-anchor="middle" fill="#dcfff6" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="15">整理摘要，</text>
+    <text x="90" y="262" text-anchor="middle" fill="#dcfff6" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="15">留下可追蹤紀錄</text>
+  </g>
+
+  <text x="100" y="820" fill="#8fb5da" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="22">建議每張卡都要有：目標、限制、完成條件、驗證方式。</text>
+</svg>
